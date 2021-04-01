@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "covid-vaccine-2_1_120x100.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "covid-vaccine-2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

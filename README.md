@@ -28,4 +28,4 @@ A high score/leaderboard screen.  Keep track of scores across multiple starts of
   
 # GIF
 
-<img src="http://g.recordit.co/VaCIQHWY4a.gif" width=350><br>
+<img src="http://g.recordit.co/VaCIQHWY4a.gif" width=800 height= 800><br>

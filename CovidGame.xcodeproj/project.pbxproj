@@ -23,6 +23,7 @@
 		5A69243026155C3900A6EA09 /* enemy-types.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A69242A26155C3800A6EA09 /* enemy-types.json */; };
 		5A69243126155C3900A6EA09 /* EnemyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A69242B26155C3900A6EA09 /* EnemyType.swift */; };
 		5A69243926155CD800A6EA09 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A69243826155CD800A6EA09 /* GameScene.swift */; };
+		5A69243E2615721600A6EA09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A69243D2615721600A6EA09 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		5A69242A26155C3800A6EA09 /* enemy-types.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "enemy-types.json"; sourceTree = "<group>"; };
 		5A69242B26155C3900A6EA09 /* EnemyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyType.swift; sourceTree = "<group>"; };
 		5A69243826155CD800A6EA09 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		5A69243D2615721600A6EA09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		5A6923642614C39700A6EA09 = {
 			isa = PBXGroup;
 			children = (
+				5A69243D2615721600A6EA09 /* README.md */,
 				5A69236F2614C39700A6EA09 /* CovidGame */,
 				5A6923872614C39A00A6EA09 /* CovidGameTests */,
 				5A6923922614C39A00A6EA09 /* CovidGameUITests */,
@@ -261,6 +264,7 @@
 				5A6923FC2615528E00A6EA09 /* Startfield.sks in Resources */,
 				5A6923732614C39700A6EA09 /* GameScene.sks in Resources */,
 				5A69242D26155C3900A6EA09 /* waves.json in Resources */,
+				5A69243E2615721600A6EA09 /* README.md in Resources */,
 				5A69237E2614C39900A6EA09 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

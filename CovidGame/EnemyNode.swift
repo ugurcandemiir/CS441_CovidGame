@@ -48,5 +48,6 @@ class EnemyNode: SKSpriteNode {
         let sequence = SKAction.sequence([movement, .removeFromParent()])
         run(sequence)
     }
+    
 
 }

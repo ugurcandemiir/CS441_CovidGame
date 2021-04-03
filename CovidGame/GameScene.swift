@@ -96,6 +96,16 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
     
     override func update(_ currentTime: TimeInterval) {
 
+        if let accelerometerData = motionManager.accelerometerData {
+            player.position.y += CGFloat(accelerometerData.acceleration.x * 50)
+
+            if player.position.y < frame.minY {
+                player.position.y = frame.minY
+            } else if player.position.y > frame.maxY {
+                player.position.y = frame.maxY
+            }
+        }
+
         for child in children {
             if child.frame.maxX < 0 {
                 if !frame.intersects(child.frame) {
@@ -109,7 +119,7 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         if activeEnemies.isEmpty {
             createWave()
         }
-        
+
         for enemy in activeEnemies {
             guard frame.intersects(enemy.frame) else { continue }
 
@@ -121,9 +131,8 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
                 }
             }
         }
-
-
     }
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard isPlayerAlive else { return }
 
@@ -192,6 +201,18 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
             firstNode.removeFromParent()
             secondNode.removeFromParent()
         }
+    }
+    
+    func gameOver() {
+        isPlayerAlive = false
+
+        if let explosion = SKEmitterNode(fileNamed: "Explosion") {
+            explosion.position = player.position
+            addChild(explosion)
+        }
+
+        let gameOver = SKSpriteNode(imageNamed: "gameOver")
+        addChild(gameOver)
     }
 
 }

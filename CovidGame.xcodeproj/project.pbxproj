@@ -24,6 +24,7 @@
 		5A69243126155C3900A6EA09 /* EnemyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A69242B26155C3900A6EA09 /* EnemyType.swift */; };
 		5A69243926155CD800A6EA09 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A69243826155CD800A6EA09 /* GameScene.swift */; };
 		5A69243E2615721600A6EA09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A69243D2615721600A6EA09 /* README.md */; };
+		5A92C1212618E07B00D86720 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5A92C1202618E07B00D86720 /* Explosion.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		5A69242B26155C3900A6EA09 /* EnemyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyType.swift; sourceTree = "<group>"; };
 		5A69243826155CD800A6EA09 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		5A69243D2615721600A6EA09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5A92C1202618E07B00D86720 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				5A69237D2614C39900A6EA09 /* Assets.xcassets */,
 				5A69237F2614C39900A6EA09 /* Info.plist */,
 				5A6923FB2615528E00A6EA09 /* Startfield.sks */,
+				5A92C1202618E07B00D86720 /* Explosion.sks */,
 			);
 			path = CovidGame;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				5A69243026155C3900A6EA09 /* enemy-types.json in Resources */,
 				5A6923DD2615470E00A6EA09 /* LaunchScreen.xib in Resources */,
 				5A6923FC2615528E00A6EA09 /* Startfield.sks in Resources */,
+				5A92C1212618E07B00D86720 /* Explosion.sks in Resources */,
 				5A6923732614C39700A6EA09 /* GameScene.sks in Resources */,
 				5A69242D26155C3900A6EA09 /* waves.json in Resources */,
 				5A69243E2615721600A6EA09 /* README.md in Resources */,

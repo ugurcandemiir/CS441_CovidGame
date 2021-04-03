@@ -29,16 +29,17 @@ class GameScene: SKScene {
     var isPlayerAlive = true
     var levelNumber = 0
     var waveNumber = 0
+    
 
     let positions = Array(stride(from: -320, through: 320, by: 80))
     
     override func didMove(to view: SKView) {
         physicsWorld.gravity = .zero
         if let particles = SKEmitterNode(fileNamed: "Startfield"){
-        particles.position = CGPoint(x:1080,y:0)
+            particles.position = CGPoint(x:1080,y:0)
             particles.advanceSimulationTime(60)
-        particles.zPosition = -1
-        addChild(particles)
+            particles.zPosition = -1
+            addChild(particles)
     
         }
         player.name = "player"
@@ -98,6 +99,18 @@ class GameScene: SKScene {
 
         if activeEnemies.isEmpty {
             createWave()
+        }
+        
+        for enemy in activeEnemies {
+            guard frame.intersects(enemy.frame) else { continue }
+
+            if enemy.lastFireTime + 1 < currentTime {
+                enemy.lastFireTime = currentTime
+
+                if Int.random(in: 0...6) == 0 {
+                    enemy.fire()
+                }
+            }
         }
 
 
